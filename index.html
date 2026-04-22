@@ -10,40 +10,71 @@
 <style>
 body{
     font-family:'Cairo',sans-serif;
-    background:#0a192f;
+    background:linear-gradient(135deg,#0a192f,#020c1b);
     color:white;
     text-align:center;
-    padding-top:100px;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:rgba(255,255,255,0.05);
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.logo{
+    width:150px;
+    margin-bottom:20px;
 }
 
 h1{
-    font-size:40px;
+    font-size:30px;
+    margin-bottom:10px;
 }
 
 p{
     margin:20px 0;
+    font-size:18px;
 }
 
 .btn{
+    display:inline-block;
     background:#d4af37;
     color:black;
-    padding:15px 25px;
+    padding:15px 30px;
     text-decoration:none;
-    border-radius:6px;
+    border-radius:8px;
     font-size:18px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#f1c40f;
+    transform:scale(1.05);
 }
 </style>
 </head>
 
 <body>
 
-<h1>PORTIVA Logistics</h1>
+<div class="container">
 
-<p>تواصل معنا مباشرة عبر واتساب</p>
+    <img src="logo.png" class="logo">
 
-<a class="btn" href="https://wa.me/201204646350">
-اضغط هنا للتواصل
-</a>
+    <h1>PORTIVA Logistics</h1>
+
+    <p>تواصل معنا مباشرة عبر واتساب</p>
+
+    <a class="btn" href="https://wa.me/201204646350" target="_blank">
+        اضغط هنا للتواصل
+    </a>
+
+</div>
 
 </body>
 </html>
